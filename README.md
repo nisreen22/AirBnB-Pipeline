@@ -1,4 +1,5 @@
-# 🏠 AirBnB Data Transformation Project (dbt + Snowflake)
+# 🏠 AirBnB Data Transformation ELT 
+# ❄️ dbt + Snowflake ❄️
 
 This project focuses on building a robust Data Warehouse layer for AirBnB data using **dbt (data build tool)** and **Snowflake**. It transforms raw data into a structured **Star Schema** to enable efficient analytics and reporting.
 
@@ -23,10 +24,19 @@ The project is organized into several layers:
 2. **Core Layer (Mart):**
    - **Dimension Tables:** `DIM_Host`, `DIM_Location`, `DIM_Property`, `DIM_Date`, and `DIM_Reviews`.
    - **Fact Table:** `AirbnbFact` containing measurable data and foreign keys to dimensions.
+## 📊 Visualization & Insights
+Here is the data lineage and the final dashboard created in Power BI:
+
+### Data Lineage
+![Lineage](./Dashboard/lineage.png)
+
+### Power BI Dashboard
+![Dashboard Overview](./Dashboard/Overview.png)
+![Dashboard HOst](./Dashboard/Host.png)
+
 
 ## 📊 Key Features
 - **Data Lineage:** Full traceability from raw source to final fact table.
 - **Tests:** Implementation of generic dbt tests (Unique, Not Null) to ensure data quality.
 - **Documentation:** Automated documentation generated using dbt.
-
 
